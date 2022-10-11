@@ -14,3 +14,11 @@
     padding: 50px;
 
 }
+
+.home-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: 50px;
+    justify-items: center;
+}
