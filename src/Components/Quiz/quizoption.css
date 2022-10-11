@@ -4,3 +4,10 @@
     background-color: rgb(166, 250, 222);
     padding: 10px;
 }
+
+.quizAns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
