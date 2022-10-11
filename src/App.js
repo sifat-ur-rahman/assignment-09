@@ -35,7 +35,8 @@ function App() {
           element: <About></About>
         },
         {
-
+          path: '*',
+          element: <h2>no page</h2>
         }
       ]
     }
