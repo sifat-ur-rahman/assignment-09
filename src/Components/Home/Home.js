@@ -7,7 +7,7 @@ import Categories from '../categories/Categories'
 const Home = () => {
     const categories = useLoaderData()
 
-    console.log(categories.data);
+    // console.log(categories.data);
     return (
         <div>
             <div className='header'>
