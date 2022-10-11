@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-img img {
+    width: 500px;
+    margin-top: 0;
+
+}
+
+.header-text {
+    padding: 50px;
+
+}
