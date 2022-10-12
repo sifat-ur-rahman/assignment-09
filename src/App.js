@@ -5,7 +5,8 @@ import Home from './Components/Home/Home';
 import Main from './Layouts/Main';
 import Quiz from './Components/Quiz/Quiz';
 import Chirt from './Components/Chirt/Chirt';
-import About from './Components/About/About';
+import About from './Components/About/Blog';
+import Blog from './Components/About/Blog';
 
 function App() {
   const router = createBrowserRouter([
@@ -32,8 +33,8 @@ function App() {
           element: <Chirt></Chirt>
         },
         {
-          path: '/about',
-          element: <About></About>
+          path: '/blog',
+          element: <Blog></Blog>
         },
         {
           path: '*',

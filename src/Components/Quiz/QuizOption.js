@@ -3,6 +3,7 @@ import QuizeOptAns from './QuizeOptAns';
 import './quizoption.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
+import Swal from 'sweetalert2';
 
 const QuizOption = ({ opt }) => {
     const { correctAnswer, options, question } = opt
@@ -12,7 +13,9 @@ const QuizOption = ({ opt }) => {
 
     console.log(ans);
     if (correctAnswer === ans) {
-        alert("This is the correct answer");
+        // alert();
+
+        Swal.fire("This is the correct answer")
 
     }
 
@@ -20,8 +23,18 @@ const QuizOption = ({ opt }) => {
     return (
         <div className='quizoption'>
             <div className='quizAns'>
-                <h2>Quiz Answer: {correctAns}</h2>
-                <button className='icon' onClick={() => setCorrectAns(correctAnswer)}><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
+                <h2>Quiz Answer: {correctAns}
+                </h2>
+                {/* Swal.fire(
+                'The Internet?',
+
+                ) */}
+
+                <button className='icon'
+
+                    onClick={() => setCorrectAns(correctAnswer)}
+
+                ><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
             </div>
 
             <h3> {question}</h3>
