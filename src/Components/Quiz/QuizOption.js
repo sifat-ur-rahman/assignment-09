@@ -25,10 +25,7 @@ const QuizOption = ({ opt }) => {
             <div className='quizAns'>
                 <h2>Quiz Answer: {correctAns}
                 </h2>
-                {/* Swal.fire(
-                'The Internet?',
 
-                ) */}
 
                 <button className='icon'
 

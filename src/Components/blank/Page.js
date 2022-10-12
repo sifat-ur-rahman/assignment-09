@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Error = () => {
+const page = () => {
     return (
         <div>
-            There Are No Page here.
+            <h2>Here is no page</h2>
         </div>
     );
 };
 
-export default Error;
+export default page;

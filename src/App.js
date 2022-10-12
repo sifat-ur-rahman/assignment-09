@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Main from './Layouts/Main';
 import Quiz from './Components/Quiz/Quiz';
 import Chirt from './Components/Chirt/Chirt';
-import About from './Components/About/Blog';
+
 import Blog from './Components/About/Blog';
-import Error from './Components/error';
+import Page from './Components/blank/Page';
 
 function App() {
   const router = createBrowserRouter([
@@ -39,7 +39,7 @@ function App() {
         },
         {
           path: '*',
-          element: <Error></Error>
+          element: <Page></Page>
         }
       ]
     }

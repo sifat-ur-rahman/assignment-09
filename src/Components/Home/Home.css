@@ -22,3 +22,16 @@
     margin: 50px;
     justify-items: center;
 }
+
+@media only screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
