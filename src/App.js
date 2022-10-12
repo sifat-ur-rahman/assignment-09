@@ -28,6 +28,7 @@ function App() {
         },
         {
           path: '/chirt',
+          loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
           element: <Chirt></Chirt>
         },
         {
