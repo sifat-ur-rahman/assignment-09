@@ -7,6 +7,7 @@ import Quiz from './Components/Quiz/Quiz';
 import Chirt from './Components/Chirt/Chirt';
 import About from './Components/About/Blog';
 import Blog from './Components/About/Blog';
+import Error from './Components/error';
 
 function App() {
   const router = createBrowserRouter([
@@ -38,7 +39,7 @@ function App() {
         },
         {
           path: '*',
-          element: <h2>no page</h2>
+          element: <Error></Error>
         }
       ]
     }
